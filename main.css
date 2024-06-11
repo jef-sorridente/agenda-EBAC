@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  --color-1: #1464ff;
+  --color-2: #fff;
+  --color-3: #f2f2f2;
+  --color-4: #1652cb;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--color-3);
+}
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 50px;
+  background-color: var(--color-2);
+  border-radius: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 48px;
+  color: var(--color-1);
+}
+
+#form {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: end;
+  margin: 50px 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input input {
+  height: 30px;
+}
+
+.btn {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  background-color: var(--color-4);
+}
+
+.table {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-spacing: 0;
+  margin: 20px auto;
+}
+
+.table thead tr th,
+.table tbody tr td,
+.table tfoot tr td {
+  padding: 10px;
+}
+
+.table thead tr th {
+  font-size: 18px;
+  text-align: start;
+  color: var(--color-1);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-1);
+  color: var(--color-2);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--color-3);
+}
+
+.mensagem-erro {
+  top: -100px;
+  position: absolute;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.mensagem-erro {
+  background-color: var(--color-1);
+  color: #fff;
+}
+
+.mensagem-disabilitada {
+  display: none;
+}

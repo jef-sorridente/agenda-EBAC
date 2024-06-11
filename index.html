@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <p id="mensagem"></p>
+        <img src="/imagem/logo.svg" alt="Logo de uma agenda" />
+        <h1>Agenda de Contatos</h1>
+      </header>
+      <form id="form">
+        <div class="input">
+          <label for="nomeContato">Nome do Contato</label>
+          <input type="text" id="nomeContato" required />
+        </div>
+        <div class="input">
+          <label for="numeroContato">Número</label>
+          <input type="tel" id="numeroContato" required />
+        </div>
+        <button class="btn">Adicionar +</button>
+      </form>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome do Contato</th>
+            <th>Número</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td>Total de contatos</td>
+            <td id="totalNumerosCadastrados">--</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
